@@ -6,6 +6,10 @@
   font-family: 'scripter';
   src: url('/file?fn=Demo_ConeriaScript.ttf');
 }
+body{
+  -webkit-tap-highlight-color:transparent;
+  user-select:none;
+}
 #humanslider div{
   cursor: pointer;
 }

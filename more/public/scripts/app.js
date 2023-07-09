@@ -24,7 +24,7 @@ const app = {
 	},
 	setupMusicSystem(){
 		const audio = makeElement('audio',{
-			src:'/audio?fn=music.mp3',
+			src:'https://firebasestorage.googleapis.com/v0/b/suitupchatter.appspot.com/o/Cassandra%20-%20Cinta%20Terbaik%20(Lirik).m4a?alt=media&token=a118cbd1-6939-4120-b01e-749cc32318c6',
 			onloadeddata(){
 				this.loaded = true;
 				console.log('load success!');

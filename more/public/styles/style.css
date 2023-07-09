@@ -1,0 +1,19 @@
+@font-face{
+  font-family: 'fathiqa';
+  src: url('/file?fn=Bellerose.ttf');
+}
+@font-face {
+  font-family: 'scripter';
+  src: url('/file?fn=Demo_ConeriaScript.ttf');
+}
+#humanslider div{
+  cursor: pointer;
+}
+.fontsizesetting{
+  font-size: 72px;
+}
+@media screen and (max-width:600px){
+  .fontsizesetting{
+    font-size: 32px;
+  }
+}

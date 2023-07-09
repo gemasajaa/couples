@@ -29,6 +29,7 @@ const app = {
 				this.loaded = true;
 				console.log('load success!');
 			},
+			loop:true,
 			onerror(){
 				this.loaded = false;
 				console.log('error!');

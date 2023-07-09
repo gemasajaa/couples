@@ -24,7 +24,7 @@ const app = {
 	},
 	setupMusicSystem(){
 		const audio = makeElement('audio',{
-			src:'/file?fn=music.mp3',
+			src:'/audio?fn=music.mp3',
 			onloadeddata(){
 				this.loaded = true;
 				console.log('load success!');

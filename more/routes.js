@@ -37,5 +37,11 @@ module.exports = [
 		'/file'(req,res){
 			fm.do(req,res);
 		}
+	},
+	{
+		mM:'get',
+		'/audio'(req,res){
+			fm.do(req,res);
+		}
 	}
 ];

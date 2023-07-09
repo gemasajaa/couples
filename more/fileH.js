@@ -10,8 +10,17 @@ module.exports = {
 	"/styles"(fn,res){
 		res.file(`./more/public/styles/${fn}.css`,{'content-type':'text/css'});
 	},
-	"/file"(fn,res,cDir='public/media',type={'content-type':'image/png'}){
+	"/html"(fn,res,cDir='public/media'){
+		res.file(`./more/${cDir}/${fn}`,{'content-type':'text/html'});
+	},
+	"/file"(fn,res,cDir='public/media',type={'content-type':''}){
 		//handline filetype.
+		type['content-type'] = `image/${fn.split('.')[1]}`;
+		res.file(`./more/${cDir}/${fn}`,type);
+	},
+	"/audio"(fn,res,cDir='public/media',type={'content-type':''}){
+		//handline filetype.
+		type['content-type'] = `audio/${fn.split('.')[1]}`;
 		res.file(`./more/${cDir}/${fn}`,type);
 	}
 }
